@@ -1,8 +1,10 @@
+import React from 'react';
+import EmployeePage from './components/EmployeePage';
 
 function App() {
   return (
     <div>
-      <h1>Hello Adam</h1>
+      <EmployeePage />
     </div>
   );
 }
