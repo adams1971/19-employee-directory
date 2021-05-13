@@ -9,6 +9,9 @@ function EmployeePage() {
       setEmployees(res.data.results);
     })();
   }, []);
+  const sortByLastName =() => {
+      employees.sort()
+  }
   return (
     <div>
       {console.log(employees)}
