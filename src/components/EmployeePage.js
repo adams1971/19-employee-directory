@@ -9,21 +9,22 @@ function EmployeePage() {
       setEmployees(res.data.results);
     })();
   }, []);
-  const sortByLastName =() => {
-      employees.sort()
-  }
+//   const sortByLastName =() => {
+//       employees.sort()
+//   }
   return (
     <div>
       {console.log(employees)}
-      <h1> Employee Directory! </h1>
+      {/* <h1> Employee Directory! </h1> */}
       <table>
         <thead>
           <tr>
-            <th>id</th>
-            <th>first name</th>
-            <th>last name</th>
+            <th>Photo</th>
+            <th>First Name</th>
+            <th>Last Name</th>
             <th>email</th>
-            <th>photo</th>
+            <th>Date of Hire</th>
+            <th>Location</th>
           </tr>
         </thead>
         <tbody>
@@ -32,7 +33,8 @@ function EmployeePage() {
                 return (
                     <tr key= {idx}>
                         <td>
-                            {idx}
+                            <img src= 
+                            {person.picture.thumbnail}/>
                         </td>
                         <td>
                             {person.name.first}
@@ -44,10 +46,11 @@ function EmployeePage() {
                             {person.email}
                         </td>
                         <td>
-                            <img src= 
-                            {person.picture.thumbnail}/>
+                            {person.registered.date}
                         </td>
-
+                        <td>
+                            {person.location.city}
+                        </td>
                     </tr>
                 )
             })}
