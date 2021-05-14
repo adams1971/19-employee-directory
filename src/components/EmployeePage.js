@@ -15,7 +15,7 @@ function EmployeePage() {
   return (
     <div>
       {console.log(employees)}
-      {/* <h1> Employee Directory! </h1> */}
+      
       <table>
         <thead>
           <tr>
