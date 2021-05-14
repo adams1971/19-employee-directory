@@ -16,7 +16,7 @@
 - npm install --save bootstrap  
 
 ## Deployed Application
-https://adams1971.github.io/19-employee-directory/ 
+adams1971.github.io/19-employee-directory/ 
 
 
 ## Screenshot 
