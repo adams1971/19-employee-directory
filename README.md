@@ -20,7 +20,7 @@ https://adams1971.github.io/19-employee-directory/
 
 
 ## Screenshot 
-![assets/ScreenShotReactEmpDir.png](assets/ScreenShotReactEmpDir.png)
+![assets/ScreenSEMPDir.png](assets/ScreenSEMPDir.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
