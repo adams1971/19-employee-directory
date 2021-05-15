@@ -40,13 +40,14 @@ function EmployeePage() {
     <div className="body">
       
       
+      
       {/* <SearchForm handleFilter={handleFilter} /> */}
       <table className="table table-striped table-sortable">
         <thead>
           <tr>
             <th>Photo</th>
-            <th>First Name</th>
             <th onClick={() => sortByLastName()}>Last Name</th>
+            <th>First Name</th>
             <th>email</th>
             <th>Date of Hire</th>
             <th>Location</th>
@@ -61,8 +62,8 @@ function EmployeePage() {
                             <img src= 
                             {person.picture.thumbnail}/>
                         </td>
-                        <td>{person.name.first}</td>
                         <td>{person.name.last}</td>
+                        <td>{person.name.first}</td>
                         <td>{person.email}</td>
                         <td>{person.registered.date}</td>
                         <td>{person.location.city}</td>
