@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-// import Navbar from "./Navbar";
-// import Navbar from "../Navbar/index";
-// import SearchForm from "../Filter";
+import Navbar from "./Navbar/index";
+//import Navbar from "../Navbar/index";
+//import SearchForm from "../Filter";
 
 function EmployeePage() {
   const [employees, setEmployees] = useState([]);
@@ -16,13 +16,13 @@ function EmployeePage() {
     })();
   }, []);
 
-  const handleFilter = (event) => {
-    const filterText = event.target.value.toLowerCase();
-    const filterEmp = employees.filter((employee) => {
-      return employee.name.last.toLowerCase().indexOf(filterText) > -1
-    })
-    setFilterEmployees(filterEmp)
-  }
+  // const handleFilter = (event) => {
+  //   const filterText = event.target.value.toLowerCase();
+  //   const filterEmp = employees.filter((employee) => {
+  //     return employee.name.last.toLowerCase().indexOf(filterText) > -1
+  //   })
+  //   setFilterEmployees(filterEmp)
+  // }
 
   const sortByLastName = () => {
     console.log("sort by last name only")
